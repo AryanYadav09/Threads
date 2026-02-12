@@ -1,5 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
+import { BrowserRouter } from "react-router-dom"
 import {
   createSystem,
   defaultConfig,
@@ -42,7 +43,9 @@ const system = createSystem(defaultConfig, customConfig)
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider value={system}>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>,
 )
