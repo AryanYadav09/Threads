@@ -8,6 +8,7 @@ import {
 } from "@chakra-ui/react"
 import { Provider } from "@/components/ui/provider"
 import App from "./App"
+import "./index.css"
 
 const customConfig = defineConfig({
   theme: {
